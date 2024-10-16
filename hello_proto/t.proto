@@ -1,0 +1,8 @@
+
+service Advertiser {
+  // 标签页
+  rpc Tabs(AdvertiserListRequest) returns (AdvertiserTabsResponse) {
+    option (google.api.http) = {
+      get : "/advertiser/tabs"
+    };
+  };

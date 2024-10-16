@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+
+import "google/api/annotations.proto";
+import "google/protobuf/struct.proto";
+
+//用户任务
+service Resource {
+    // 1.1. 获取房间tab
+    rpc RoomTabs (ResourceRoomTabsRequest) returns (ResourceRoomTabsResponse) {
+        option (google.api.http) = {
+            get: "/resource/room/tabs"
+        };
+    }
+
+}
+
+
+message ResourceRoomTabsRequest{
+    int64 a = 1;
+    string b = 2;
+}
+
+message ResourceRoomTabsResponse{
+    string res = 1;
+}

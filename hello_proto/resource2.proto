@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option go_package = "./";
+
+message ResourceRoomTabsRequest{
+    int64 a = 1;
+    string b = 2;
+}
+
+message ResourceRoomTabsResponse{
+    string res = 1;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package = "./";
+
+message A{
+    int64 id = 1;
+}
+
+message B{
+    string name= 1;
+}
