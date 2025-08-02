@@ -19,6 +19,8 @@ func main() {
 		// right-click your code in the editor and select the <b>Debug</b> option.
 		fmt.Println("i =", 100/i)
 	}
+
+	fmt.Println("test.")
 }
 
 //TIP See GoLand help at <a href="https://www.jetbrains.com/help/go/">jetbrains.com/help/go/</a>.
